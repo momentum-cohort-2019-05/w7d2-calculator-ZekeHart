@@ -7,6 +7,18 @@
   .c-clear {
     grid-area: clear;
   }
+  .c-parenL {
+    grid-area: parenL;
+  }
+  .c-parenR {
+    grid-area: parenR;
+  }
+  .c-modulo {
+    grid-area: modulo;
+  }
+  .c-power {
+    grid-area: power;
+  }
   .c-seven {
     grid-area: seven;
   }
@@ -58,6 +70,7 @@
       "display display display display"
       "display display display display"
       "name name name clear"
+      "parenL parenR modulo power"
       "seven eight nine div"
       "four five six mult"
       "one two three minus"
