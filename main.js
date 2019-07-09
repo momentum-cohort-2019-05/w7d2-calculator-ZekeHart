@@ -1,7 +1,7 @@
 const displayWindow = document.querySelector('.c-display')
 const inputBox = displayWindow.querySelector('input')
-const buttonList = document.querySelectorAll('#clicky')
-for (let button of buttonList) {
+const buttonArray = document.querySelectorAll('#clicky')
+for (let button of buttonArray) {
     button.addEventListener('click', function () {
         if (button.innerText === '=') {
             try {
@@ -23,3 +23,14 @@ for (let button of buttonList) {
         }
     })
 }
+inputBox.addEventListener('keyup', function (e) {
+    if (e.keyCode === 13) {
+        try {
+            inputBox.value = math.evaluate(inputBox.value)
+        }
+        catch{
+            inputBox.value = ''
+            window.alert("Pls enter valid input")
+        }
+    }
+})
