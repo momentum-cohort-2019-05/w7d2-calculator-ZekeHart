@@ -1,0 +1,65 @@
+.c-display {
+    grid-area: display;
+  }
+  .c-name {
+    grid-area: name;
+  }
+  .c-clear {
+    grid-area: clear;
+  }
+  .c-seven {
+    grid-area: seven;
+  }
+  .c-eight {
+    grid-area: eight;
+  }  .c-nine{
+    grid-area: nine;
+  }  .c-div {
+    grid-area: div;
+  }  .c-four {
+    grid-area: four;
+  }  .c-five {
+    grid-area: five;
+  }  .c-six {
+    grid-area: six;
+  }  .c-mult {
+    grid-area: mult;
+  }  .c-one {
+    grid-area: one;
+  }  .c-two {
+    grid-area: two;
+  }  .c-three {
+    grid-area: three;
+  }  .c-minus {
+    grid-area: minus;
+  }  .c-zero {
+    grid-area: "zero";
+  }
+  .c-dot {
+    grid-area: "dot";
+  }
+  .c-equal {
+    grid-area: equal;
+  }
+  .c-plus {
+    grid-area: plus;
+  }
+  
+  input {
+      border: none;
+  }
+  .c-container {
+    width: 320px;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 50px;
+    grid-gap: 6px 0px;
+    grid-template-areas: 
+      "display display display display"
+      "display display display display"
+      "name name name clear"
+      "seven eight nine div"
+      "four five six mult"
+      "one two three minus"
+      "zero dot equal plus";
+  }
