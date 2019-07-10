@@ -7,6 +7,10 @@
 body{
     background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 }
+
+.page-title{
+    text-shadow: 1px 1px 2px black;
+}
 .c-display {
     grid-area: display;
   }

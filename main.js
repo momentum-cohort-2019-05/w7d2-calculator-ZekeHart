@@ -11,6 +11,7 @@ for (let button of buttonArray) {
         if (button.innerText === '=') {
             if (inputBox.value === '') {
                 inputBox.value = 0
+                inputBox.focus()
             }
             try {
                 inputBox.value = math.evaluate(inputBox.value)
