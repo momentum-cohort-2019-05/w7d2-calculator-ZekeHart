@@ -70,6 +70,7 @@ body{
       border: none;
   }
   .c-container {
+    /* background-image: url("https://images.unsplash.com/photo-1501166222995-ff31c7e93cef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2691&q=80") */
     width: 320px;
     display: grid;
     grid-template-columns: 80px 80px 80px 80px;

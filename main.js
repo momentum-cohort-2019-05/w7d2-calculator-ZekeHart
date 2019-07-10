@@ -1,6 +1,6 @@
 const displayWindow = document.querySelector('.c-display')
 const inputBox = displayWindow.querySelector('input')
-const buttonArray = document.querySelectorAll('#clicky')
+const buttonArray = document.querySelectorAll('.clicky')
 
 window.onload = (event) => {
     inputBox.focus()
@@ -38,6 +38,9 @@ for (let button of buttonArray) {
 }
 inputBox.addEventListener('keyup', function (e) {
     if (e.code === 'Enter') {
+        if (inputBox.value === '') {
+            inputBox.value = 0
+        }
         try {
             inputBox.value = math.evaluate(inputBox.value)
             inputBox.focus()
