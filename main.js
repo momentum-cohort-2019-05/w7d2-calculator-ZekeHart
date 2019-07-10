@@ -37,7 +37,7 @@ for (let button of buttonArray) {
     })
 }
 inputBox.addEventListener('keyup', function (e) {
-    if (e.keyCode === 13) {
+    if (e.code === 'Enter') {
         try {
             inputBox.value = math.evaluate(inputBox.value)
             inputBox.focus()
