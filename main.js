@@ -1,6 +1,11 @@
 const displayWindow = document.querySelector('.c-display')
 const inputBox = displayWindow.querySelector('input')
 const buttonArray = document.querySelectorAll('#clicky')
+
+window.onload = (event) => {
+    inputBox.focus()
+}
+
 for (let button of buttonArray) {
     button.addEventListener('click', function () {
         if (button.innerText === '=') {
