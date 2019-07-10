@@ -9,6 +9,9 @@ window.onload = (event) => {
 for (let button of buttonArray) {
     button.addEventListener('click', function () {
         if (button.innerText === '=') {
+            if (inputBox.value === '') {
+                inputBox.value = 0
+            }
             try {
                 inputBox.value = math.evaluate(inputBox.value)
                 inputBox.focus()
